@@ -2,7 +2,7 @@
 
 ## Website
 I've deployed this app on Heroku and the link is given below:
-Link: [https://tweetilyse.herokuapp.com/](https://tweetilyse.herokuapp.com/)
+###Link: [https://tweetilyse.herokuapp.com/](https://tweetilyse.herokuapp.com/) or [https://bit.ly/Tweetilyse](https://bit.ly/Tweetilyse)
 
 Tweetilyse is a simple web app to analyse tweets from a given user
 
