@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Results - Tweetilyse by SOUMI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+		<link rel="apple-touch-icon" sizes="180x180" href="../static/images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../static/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../static/images/favicon-16x16.png">
+		<link rel="manifest" href="../static/images/site.webmanifest">
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong><a href="index.html">Tweetilyse</a></strong> by Soumallya Dev</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="/#banner">Home</a></li>
+						<li><a href="/#three">About</a></li>
+						<li><a href="/#four">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>Results</h2>
+						<p>The following are our derivations for <a href="{{ proflink }}" style="text-decoration: none;" target="blank"><span style="color: black;">@{{ userID }}<span></a></p>
+					</header>
+
+					<h2>Sentiment Analysis</h2>
+					<div class="analysis" style="width: 500px; margin: 60px auto;">
+						<li style="margin: 20px  0; list-style: none;">
+							<h4>Positive</h4><span class="bar" style="background: #353b48; display: block; height: 7px; border: 1px solid rgba(0,0,0,0.3); border-radius: 3px; overflow: hidden; box-shadow: 0 0 10px #2187e7b3;"><span class="positive" style="height: 5px; float: left; background: #2187e7; width: {{ pper }}%;"></span></span>
+						</li>
+						<li style="margin: 20px  0; list-style: none;">
+							<h4>Neutral</h4><span class="bar" style="background: #353b48; display: block; height: 7px; border: 1px solid rgba(0,0,0,0.3); border-radius: 3px; overflow: hidden; box-shadow: 0 0 10px #2187e7b3;"><span class="neutral" style="height: 5px; float: left; background: #2187e7; width: {{ neper }}%;"></span></span>
+						</li>
+						<li style="margin: 20px  0; list-style: none;">
+							<h4>Negative</h4><span class="bar" style="background: #353b48; display: block; height: 7px; border: 1px solid rgba(0,0,0,0.3); border-radius: 3px; overflow: hidden; box-shadow: 0 0 10px #2187e7b3;"><span class="negative" style="height: 5px; float: left; background: #2187e7; width: {{ nper }}%;"></span></span>
+						</li>
+					</div>
+
+
+					<h2>Word Cloud</h2>
+					<div style="width: 800px;height: 600px;margin-left: 100px;">
+						{{ html_str1 | safe }}
+					</div>
+					<br>
+					<h2>Subjectivity VS Polarity</h2>
+					<div style="width: 800px;height: 600px;margin-left: 100px;">
+						{{ html_str2 | safe }}
+					</div>
+					
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://github.com/soumallyadev07" class="icon fa-github"></a></li>
+						<li><a href="https://www.facebook.com/The.Eminent.Guy/" class="icon fa-facebook"></a></li>
+						<li><a href="https://twitter.com/Dev_Soumallya" class="icon fa-twitter"></a></li>
+						<li><a href="https://www.instagram.com/_soumallya_/" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Soumallya Dev</li>
+						<li>Design: <a href="http://bit.ly/Soumallya-Dev">Soumallya</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/skel.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+
+	</body>
+</html>
