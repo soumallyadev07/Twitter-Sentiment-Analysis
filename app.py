@@ -99,6 +99,10 @@ def err1found(e):
 def err2found(e):
     return render_template('index.html', error="ERROR: Please Try Again "), 404
 
+@app.errorhandler(403)
+def err2found(e):
+    return render_template('index.html', error="ERROR: Please Try Again "), 403
+
 
 if __name__ == '__main__':
 	app.run(debug=True)
