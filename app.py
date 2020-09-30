@@ -100,7 +100,7 @@ def err2found(e):
     return render_template('index.html', error="ERROR: Please Try Again "), 404
 
 @app.errorhandler(403)
-def err2found(e):
+def err3found(e):
     return render_template('index.html', error="ERROR: Please Try Again "), 403
 
 
