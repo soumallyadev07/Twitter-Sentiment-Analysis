@@ -7,6 +7,7 @@ from wordcloud import WordCloud
 import pandas as pd
 import numpy as np
 import re
+import os
 import matplotlib.pyplot as plt
 plt.style.use('fivethirtyeight')
 
@@ -19,10 +20,10 @@ def hello_world():
 @app.route('/result', methods=['POST', 'GET'])
 def result():
 	userID = request.form['username']
-	consumerKey = "ENTER YOUR CONSUMER KEY"
-	consumerSecret = "ENTER YOUR CONSUMER SECRET"
-	accessToken = "ENTER YOUR ACCESS TOKEN"
-	accessTokenSecret = "ENTER YOUR ACCESS TOKEN SECRET"
+	consumerKey = str(os.environ['consumerKey'])
+	consumerSecret = str(os.environ['consumerSecret'])
+	accessToken = str(os.environ['accessToken'])
+	accessTokenSecret = str(os.environ['accessTokenSecret'])
 	authenticate = tweepy.OAuthHandler(consumerKey, consumerSecret)
 
 	authenticate.set_access_token(accessToken, accessTokenSecret)
